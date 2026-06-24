@@ -1,0 +1,3 @@
+## replica count of nginx replicas
+replicaCount: 1
+

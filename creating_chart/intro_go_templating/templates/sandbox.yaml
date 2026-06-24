@@ -1,0 +1,3 @@
+# Im a comment do i show up
+{{/* go comment. */}}
+test: {{ .Values.test }}
