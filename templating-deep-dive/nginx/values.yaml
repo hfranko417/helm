@@ -1,3 +1,5 @@
+test: i am a string
+environment: staging
 replicaCount: 3
 
 # setting for nginx
@@ -11,4 +13,3 @@ service:
   type: ClusterIP
   port: 80
   targetPort: 80
-
