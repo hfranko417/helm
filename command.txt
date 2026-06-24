@@ -1,0 +1,13 @@
+to check that helm template is correct and will render
+helm template . in the directory or helm template /nginx in the directory below
+
+to create helm package 
+
+helm create package
+
+thi will create a package that is generic
+helm create nginx or name that you want to name your package.
+
+
+to create .tar.gz file for helm 
+helm package nginx
