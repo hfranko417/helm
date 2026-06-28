@@ -27,3 +27,13 @@ to lint helm chart
 this validates your template but doesn't render the file almost like a static analyzer
 
 helm lint . or directory
+
+
+helm repo list 
+this will show you all of the repos that you have downloaded
+
+helm repo update
+this will download the latest repo updates 
+
+helm search repo (postgres or whatever repo you want to search)
+this will search through a repo looking for a particular chart
