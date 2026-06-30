@@ -3,5 +3,13 @@ kind: ConfigMap
 metadata:
   name: {{ include "accessing-files.fullname" . }}
 data:  
-  application.properties: |-
-{{ .Files.Get "files/application.properties" | nindent 4 }}
+{{- range $path, $_  := .Files.Glob "files/*.properties" }}
+  {{ $path }}: |- 
+{{ $.Files.Get $path  | indent 4  }}
+{{- end }}
+
+# below this is the example if pulling from a single file
+# application.properties: |-
+#   server.port=8080
+#
+#   logging.level.root=INFO
